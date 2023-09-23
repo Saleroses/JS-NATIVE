@@ -14,7 +14,7 @@ const server = {
 
 
 fetch('https://www.google.com/search?q=js').then((data) => {
-  // console.log('Date from google', data.type)
+  // console.log('Date from google', data.ok)
 })            //fetch делает запрос, получить ответ можно через then
 
 
