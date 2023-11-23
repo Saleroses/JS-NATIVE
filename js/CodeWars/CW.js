@@ -77,19 +77,33 @@ function peopleWithAgeDrink(old) {
 //
 // Второе значение в первой паре массива равно 0, так как на первой остановке автобус пустой.
 
-let busStops = [[16,0],[97,10],[17,88],[41,7],[77,49],[6,34],[88,53],[79,95],[98,43],[50,124],[84,36],[22,110],[84,17],[40,64]]
-
-let number = function(busStops){
-  debugger
-  let result = [];
-  for (let i = 0; i < busStops.length; i++) {
-    result[i] = busStops[i][0] - busStops[i][1]
-
-  }
-  return result.reduce((sum, correct) => sum + correct)
-}
+// let busStops = [[16,0],[97,10],[17,88],[41,7],[77,49],[6,34],[88,53],[79,95],[98,43],[50,124],[84,36],[22,110],[84,17],[40,64]]
+//
+// let number = function(busStops){
+//   debugger
+//   let result = [];
+//   for (let i = 0; i < busStops.length; i++) {
+//     result[i] = busStops[i][0] - busStops[i][1]
+//
+//   }
+//   return result.reduce((sum, correct) => sum + correct)
+// }
 
 //////
+let p0 = 1000
+let percent = 2
+let aug = 50
+let p = 1200
+
+function nbYear(p0, percent, aug, p) {
+  let people = 0
+  let result = 0
+  for (; people < p; result++) {
+    people = p0 + (percent/100) * p0 + aug
+  }
+  return result
+}
 
 
 
+console.log(p0 = p0 * percent/100 + aug)
